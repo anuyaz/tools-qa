@@ -14,11 +14,10 @@ public class TestBase {
 		chromeDriver = new ChromeDriver();
 		chromeDriver.manage().window().maximize();
 	}
-
+	
 	@AfterTest
 	public void afterTest() throws Exception {
 		Thread.sleep(1000);
 		chromeDriver.close();
-	}
-
+  }
 }
